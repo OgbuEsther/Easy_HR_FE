@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
-import img from "../Components/Assets/tick.svg"
-import img2 from "./Assets/acc.png"
-import img3 from "../Components/Assets/grid.svg"
+import img from "../components/Assets/tick.svg"
+import img3 from "../components/Assets/grid.svg"
 import img4 from "../components/Assets/her.png"
 import { NavLink } from 'react-router-dom'
 
