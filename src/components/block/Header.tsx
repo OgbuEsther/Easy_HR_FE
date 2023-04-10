@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
 import logos from "../Assets/easyhr.jpeg"
-import {Link} from "react-scroll"
+import {Link} from "react-scroll"  
 
 const Header = () => {
   const [scroll, setScroll] = useState<Boolean>(false);
