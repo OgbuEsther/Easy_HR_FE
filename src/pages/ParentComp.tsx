@@ -4,21 +4,22 @@ import styled from "styled-components";
 
 
 const ParentComp = () => {
- 
+  const [show, setShow] = React.useState(false);
 
+  const Toggle = () => {
+    setShow(!show);
+  };
+  
   return (
     <div>
       <Container>
         <Wrapper>
-          <Text>Welcome Back ,Esther👋</Text>
-          <Main>
-            <First>
-             
-            </First>
-            <Second>
-          
-            </Second>
-          </Main>
+          <Top>
+            <Left>
+              <Bold>Dashboard</Bold>
+              <button onClick={Toggle}>Credit Wallet</button>
+            </Left>
+          </Top>
         </Wrapper>
       </Container>
     </div>
@@ -26,31 +27,35 @@ const ParentComp = () => {
 };
 
 export default ParentComp;
-
-const Second = styled.div`
-  width: 35%;
-  height: 100%;
+const Bold = styled.div`
+  font-size: 20px;
+  font-weight: 600;
+`;
+const Left = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 `;
 
-const First = styled.div`
-  width: 70%;
-  height: 100%;
-  display: flex;
-  /* justify-content: space-between; */
-  flex-direction: column;
-  flex-wrap: wrap;
-`;
-
-const Main = styled.div`
+const Top = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-
-  @media screen and (max-width: 768px) {
-    display: block;
+  button {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d71fa;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    border: none;
+    outline: none;
   }
 `;
 
@@ -67,9 +72,11 @@ const Text = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 95%;
-  /* height: 95%; */
-
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,16 +89,13 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   width: calc(100vw - 270px);
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #ecf2ff92; */
-  background-color: #123456;
+  background-color: #F5F7FA;
   overflow: hidden;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     width: 100vw;
-    background-color: #f1f4fb92;
   }
 `;
