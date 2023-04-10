@@ -1,12 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FiMenu} from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
+import img from ".././Assets/easyhr.png"
+import { MdDashboard } from "react-icons/md";
+import { NavLink } from 'react-router-dom';
 
 const DashboardHead = () => {
   const [show, setShow] = React.useState(false);
+  const [show2, setShow2] = React.useState(false);
 
   const Toggle = () => {
     setShow(!show);
+  };
+
+   const Toggle3 = () => {
+    setShow2(!show);
   };
   
   return (
@@ -36,12 +44,13 @@ const DashboardHead = () => {
             <Profile>G</Profile>
           </Up>
         </Right>
-          </Wrapper>
+      </Wrapper>
     </Container>
   )
 }
 
 export default DashboardHead
+
 const Profile = styled.div`
   width: 48px;
   height: 48px;
@@ -155,7 +164,7 @@ const Left = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 76%;
+  width: 74%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -181,6 +190,7 @@ const Container = styled.div`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: fixed;
   z-index: 1;
+  display: flex;
   justify-content: flex-end;
   @media screen and (max-width: 500px) {
     justify-content: center;
