@@ -102,7 +102,7 @@ const Text = styled.div`
   display: flex;
   margin-left: 30px;
   width: 120px;
-  height: 40px;
+  height: 40px
 `;
 
 const Power = styled.div`
