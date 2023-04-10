@@ -2,6 +2,8 @@ import React from "react";
 import { MdOutlineCancel } from "react-icons/md";
 import { FaGoogleWallet } from "react-icons/fa";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+
 
 
 const ParentComp = () => {
@@ -64,10 +66,23 @@ const ParentComp = () => {
                       Admin name: <strong>Paul</strong>
                     </p>
                   </Tap2>
+
+                  <Holder>
+                    <NavLink to="/payment" style={{ textDecoration: "none" }}>
+                    <button>Credit wallet</button>
+                    </NavLink>
+                    
+                    <NavLink to="/payout" style={{textDecoration: "none"}}>
+                    <button>Withdraw to bank</button>
+                  </NavLink>
+                  </Holder>
                 </Wallets>
               </Slidein>
             ) : null}
           </Top>
+          <br />
+          <br />
+          <br />
         </Wrapper>
       </Container>
     </div>
@@ -75,6 +90,22 @@ const ParentComp = () => {
 };
 
 export default ParentComp;
+const Holder = styled.div`
+  display: flex;
+  button {
+    width: 160%;
+    height: 50px;
+    background-color: #3184f7;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 60px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+`;
+
 const Tap2 = styled.div`
   h3 {
     margin: 0;
