@@ -6,7 +6,7 @@ import  ErrorBoundary  from "../utils/hoc/ErrorBoundary";
 import NotFound from "../utils/hoc/NotFound";
 
 const Home = lazy(() => import("../pages/Home"));
-const About = lazy(() => import("../pages/About"));
+const About = lazy(() => import("../pages/Connect"));
 const Comp = lazy(() => import("../pages/Comp"));
 const ParentComp = lazy(() => import("../pages/ParentComp"));
 const ContactUs = lazy(() => import("../pages/ContactUs"));
