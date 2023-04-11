@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const Comp = () => {
+const Staffs = () => {
  
 
   return (
@@ -25,7 +25,7 @@ const Comp = () => {
   );
 };
 
-export default Comp;
+export default Staffs;
 
 const Second = styled.div`
   width: 35%;

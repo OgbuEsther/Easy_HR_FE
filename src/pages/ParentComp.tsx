@@ -3,6 +3,7 @@ import { MdOutlineCancel } from "react-icons/md";
 import { FaGoogleWallet } from "react-icons/fa";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import Cards from "./Cards";
 
 
 
@@ -38,7 +39,7 @@ const ParentComp = () => {
                     </Circle>
                     <Wallet>
                       <p>Wallet Balance</p>
-                      <h3></h3>
+                      <h3>NGN</h3>
                     </Wallet>
                   </Card2>
 
@@ -83,6 +84,7 @@ const ParentComp = () => {
           <br />
           <br />
           <br />
+          <Cards />
         </Wrapper>
       </Container>
     </div>
@@ -260,18 +262,6 @@ const Top = styled.div`
     border: none;
     outline: none;
   }
-`;
-
-const Text = styled.div`
-  width: 100%;
-  /* height: 10%; */
-  /* background-color: blue; */
-  color: #1d1d41;
-  font-weight: 600;
-  font-size: 22px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  margin-left: 15px;
 `;
 
 const Wrapper = styled.div`
