@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from "styled-components"
-import img from ".././components/Assets/airtel.jpg"
-import img2 from ".././components/Assets/mtn.jpg"
-import img3 from ".././components/Assets/glo.jpg"
-import img4 from ".././components/Assets/9mobile.jpg"
-import img5 from ".././components/Assets/smile.jpg"
+import img from "../Assets/airtel.jpg"
+import img2 from "../Assets/mtn.jpg"
+import img3 from "../Assets/glo.jpg"
+import img4 from "../Assets/9mobile.jpg"
+import img5 from "../Assets/smile.jpg"
 import { AiOutlineClose } from "react-icons/ai"
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { BsFillPiggyBankFill, BsTelephoneFill, BsDatabase } from "react-icons/bs";

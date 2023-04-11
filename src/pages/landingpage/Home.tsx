@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from "styled-components"
-import img from "../components/Assets/tick.svg"
-import img3 from "../components/Assets/grid.svg"
-import img4 from "../components/Assets/her.png"
+import img from "../../Assets/tick.svg"
+import img3 from "../../Assets/grid.svg"
+import img4 from "../../Assets/her.png"
 import { NavLink } from 'react-router-dom'
 
 const Superhero = () => {

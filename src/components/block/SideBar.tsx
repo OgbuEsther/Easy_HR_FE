@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from ".././Assets/easyhr.png"
+import img from "../../Assets/easyhr.png"
 import { MdDashboard } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
 import {FiPower} from "react-icons/fi";

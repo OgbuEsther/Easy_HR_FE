@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from "../components/Assets/connect2.png"
-import img2 from "../components/Assets/payment.png"
-import img3 from "../components/Assets/growth.png"
-import img4 from "../components/Assets/connect.png"
+import img from "../../Assets/connect2.png"
+import img2 from "../../Assets/payment.png"
+import img3 from "../../Assets/growth.png"
+import img4 from "../../Assets/connect.png"
 
 const Team = () => {
   return (
