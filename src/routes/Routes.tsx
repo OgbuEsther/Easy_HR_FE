@@ -7,7 +7,7 @@ import NotFound from "../utils/hoc/NotFound";
 
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
-const Comp = lazy(() => import("../pages/Comp"));
+const Staffs = lazy(() => import("../pages/Staffs"));
 const ParentComp = lazy(() => import("../pages/ParentComp"));
 const ContactUs = lazy(() => import("../pages/ContactUs"));
 
@@ -47,8 +47,8 @@ export const Elements = createBrowserRouter([
         errorElement: <ErrorBoundary />,
       },
       {
-        path: "/dashboard/comp",
-        element: <Comp />,
+        path: "/dashboard/staffs",
+        element: <Staffs />,
         hasErrorBoundary: true,
         errorElement: <ErrorBoundary />,
       },

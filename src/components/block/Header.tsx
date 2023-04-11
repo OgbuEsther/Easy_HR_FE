@@ -453,40 +453,5 @@ const SignDiv = styled.div`
     display: none;
   }
 `;
-const SignBtn2 = styled.button`
-  height: 40px;
-  width: 120px;
-  /* margin: 12px; */
-  margin-left: 10px;
-  background-color: #377dff;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 350ms;
-  transform: scale(1);
-  :hover {
-    transform: scale(0.94);
-  }
-`;
-const SignBtn = styled.button`
-  height: 40px;
-  width: 120px;
-  /* margin: 12px; */
-  margin-left: 10px;
-  border: none;
-  border-radius: 5px;
-  color: #377dff;
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 350ms;
-  transform: scale(1);
-  :hover {
-    transform: scale(0.94);
-  }
-  @media screen and (max-width: 425px) {
-    display: none;
-  }
-`;
+
 
