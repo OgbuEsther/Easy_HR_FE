@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from ".././components/Assets/airtel.jpg"
+import img from "../Assets/airtel.jpg"
 
 const Airtels = () => {
     const [category, setCategory] = React.useState("")
