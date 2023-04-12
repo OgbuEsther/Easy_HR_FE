@@ -2,10 +2,12 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import styled from 'styled-components'
 import { SideBar } from '../../block'
+import DashboardHead from '../../block/DashboardHead'
 
 const Dashboard = () => {
   return (
     <div>
+      <DashboardHead />
         <SideBar />
      <Container>
    

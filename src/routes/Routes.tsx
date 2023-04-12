@@ -4,16 +4,18 @@ import { createBrowserRouter } from "react-router-dom";
 import { Dashboard, HomeLayout } from "../components";
 import  ErrorBoundary  from "../utils/hoc/ErrorBoundary";
 import NotFound from "../utils/hoc/NotFound";
+import HomeScreen from "../pages/landingpage/HomeScreen";
+import Payroll from "../pages/Payroll";
 import SignUp from "../pages/SigUp";
 import SignIn from "../pages/SignIn";
 import Otp from "../pages/Otp";
 import SignUpOption from "../pages/SignUpOption";
 
-const Home = lazy(() => import("../pages/Home"));
-const About = lazy(() => import("../pages/About"));
-const Comp = lazy(() => import("../pages/Comp"));
+const Home = lazy(() => import("../pages/landingpage/Home"));
+const About = lazy(() => import("../pages/landingpage/Connect"));
+const Staffs = lazy(() => import("../pages/Staffs"));
 const ParentComp = lazy(() => import("../pages/ParentComp"));
-const ContactUs = lazy(() => import("../pages/ContactUs"));
+const ContactUs = lazy(() => import("../pages/landingpage/ContactUs"));
 
 export const Elements = createBrowserRouter([
   {
@@ -22,7 +24,7 @@ export const Elements = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <HomeScreen/>,
         hasErrorBoundary: true,
         errorElement: <ErrorBoundary />,
       },
@@ -51,8 +53,14 @@ export const Elements = createBrowserRouter([
         errorElement: <ErrorBoundary />,
       },
       {
-        path: "/dashboard/comp",
-        element: <Comp />,
+        path: "/dashboard/staffs",
+        element: <Staffs />,
+        hasErrorBoundary: true,
+        errorElement: <ErrorBoundary />,
+      },
+      {
+        path: "/dashboard/payroll",
+        element: <Payroll />,
         hasErrorBoundary: true,
         errorElement: <ErrorBoundary />,
       },
