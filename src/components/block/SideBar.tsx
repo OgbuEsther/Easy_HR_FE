@@ -57,7 +57,7 @@ const SideBar = () => {
           <MdDashboard />
         </Icon2>
 
-        <Text3 onClick={Toggle}>Financials</Text3>
+        <Text3 onClick={Toggle}>Payroll</Text3>
       </Home2>
       {show ? (
         <Staffs>
