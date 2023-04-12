@@ -107,10 +107,13 @@ const Down = styled.div`
 `
 const Top = styled.div`
     h1{
-        color: #00214f;
+    color: rgb(0);
     font-size: 68px;
-    line-height: 1.1;
+    line-height: 74.8px;
     font-weight: 600;
+    text-align: start;
+    font-style: normal;
+    text-decoration: none solid rgb(0,33,79);
     margin: 0;
     @media screen and (max-width: 768px) {
         font-size: 55px;
