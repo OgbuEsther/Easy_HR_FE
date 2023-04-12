@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import {CiSearch} from "react-icons/ci"
+import { CiSearch } from "react-icons/ci"
+import img from ".././Assets/savio.jpg"
 
 const Payroll = () => {
   return (
@@ -22,18 +23,27 @@ const Payroll = () => {
                       <Taxes>Est. Employee Taxes</Taxes>
                       <Netpay>Est. Net pay</Netpay>
                       <Payment>Payment method</Payment>
-                      <Status>Status</Status>
+                      <Status></Status>
                   </Lists>
               </Table>
 
               <Table2>
                   <Lists>
-                      <Name2>Full Name</Name2>
-                      <Gross2>Gross pay</Gross2>
-                      <Taxes2>Est. Employee Taxes</Taxes2>
-                      <Netpay2>Est. Net pay</Netpay2>
-                      <Payment2>Payment method</Payment2>
-                      <Status2>Status</Status2>
+                      <Name2>
+                          <Circlehold>
+                              <Circle>
+                                  <Img src={img} />
+                              </Circle>
+                              <Id>Okwoli Godwin</Id>
+                          </Circlehold>
+                      </Name2>
+                      <Gross2>$3,125.00</Gross2>
+                      <Taxes2>$574.74</Taxes2>
+                      <Netpay2>$1,949.00</Netpay2>
+                      <Payment2>Salary</Payment2>
+                      <Status2>
+                          <Hold>Pay</Hold>
+                      </Status2>
                   </Lists>
               </Table2>
           </Wrapper>
@@ -42,6 +52,40 @@ const Payroll = () => {
 }
 
 export default Payroll
+const Hold = styled.div`
+    width: 90px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A7F3D0;
+    color: #064E3B;
+    border-radius: 50px;
+    cursor: pointer;
+`
+const Id = styled.div`
+    display: flex;
+    margin-left: 10px;
+`
+const Img = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+`
+const Circle = styled.div`
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+const Circlehold = styled.div`
+    display: flex;
+    align-items: center;
+`
+
 const Status = styled.div`
     width: 120px;
     height: 100%;
@@ -49,6 +93,7 @@ const Status = styled.div`
     display: flex;
     font-size: 13px;
     font-weight: 500;
+    justify-content: center;
 `
 const Status2 = styled.div`
     width: 120px;
@@ -56,6 +101,7 @@ const Status2 = styled.div`
     align-items: center;
     display: flex;
     font-size: 13px;
+    justify-content: center;
 `
 const Payment2 = styled.div`
     width: 180px;
@@ -63,6 +109,7 @@ const Payment2 = styled.div`
     align-items: center;
     display: flex;
     font-size: 13px;
+    justify-content: center;
 `
 const Payment = styled.div`
     width: 180px;
@@ -71,6 +118,7 @@ const Payment = styled.div`
     display: flex;
     font-size: 13px;
     font-weight: 500;
+    justify-content: center;
 `
 const Netpay2 = styled.div`
     width: 120px;
@@ -78,6 +126,7 @@ const Netpay2 = styled.div`
     align-items: center;
     display: flex;
     font-size: 13px;
+    justify-content: center;
 `
 
 const Netpay = styled.div`
@@ -87,11 +136,13 @@ const Netpay = styled.div`
     display: flex;
     font-size: 13px;
     font-weight: 500;
+    justify-content: center;
 `
 const Taxes2 = styled.div`
     width: 180px;
     height: 100%;
     align-items: center;
+    justify-content: center;
     display: flex;
     font-size: 13px;
 `
@@ -100,6 +151,7 @@ const Taxes = styled.div`
     width: 180px;
     height: 100%;
     align-items: center;
+    justify-content: center;
     display: flex;
     font-size: 13px;
     font-weight: 500;
