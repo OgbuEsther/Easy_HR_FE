@@ -21,8 +21,9 @@ const Payroll = () => {
                       <Name>Full Name</Name>
                       <Gross>Gross pay</Gross>
                       <Taxes>Est. Employee Taxes</Taxes>
-                      <Netpay>Est. Net pay</Netpay>
-                      <Payment>Payment method</Payment>
+                      <Netpay>Pension</Netpay>
+                      <Payment>Est. Net pay</Payment>
+                      <Payment>Housing</Payment>
                       <Status></Status>
                   </Lists>
               </Table>
@@ -40,7 +41,8 @@ const Payroll = () => {
                       <Gross2>$3,125.00</Gross2>
                       <Taxes2>$574.74</Taxes2>
                       <Netpay2>$1,949.00</Netpay2>
-                      <Payment2>Salary</Payment2>
+                      <Payment2>$2,649.00</Payment2>
+                      <Payment2>$2,649.00</Payment2>
                       <Status2>
                           <Hold>Pay</Hold>
                       </Status2>
