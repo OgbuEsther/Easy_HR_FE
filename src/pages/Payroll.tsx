@@ -25,6 +25,17 @@ const Payroll = () => {
                       <Status>Status</Status>
                   </Lists>
               </Table>
+
+              <Table2>
+                  <Lists>
+                      <Name2>Full Name</Name2>
+                      <Gross2>Gross pay</Gross2>
+                      <Taxes2>Est. Employee Taxes</Taxes2>
+                      <Netpay2>Est. Net pay</Netpay2>
+                      <Payment2>Payment method</Payment2>
+                      <Status2>Status</Status2>
+                  </Lists>
+              </Table2>
           </Wrapper>
       </Container>
   )
@@ -37,9 +48,32 @@ const Status = styled.div`
     align-items: center;
     display: flex;
     font-size: 13px;
+    font-weight: 500;
+`
+const Status2 = styled.div`
+    width: 120px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+`
+const Payment2 = styled.div`
+    width: 180px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 13px;
 `
 const Payment = styled.div`
     width: 180px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+`
+const Netpay2 = styled.div`
+    width: 120px;
     height: 100%;
     align-items: center;
     display: flex;
@@ -52,10 +86,26 @@ const Netpay = styled.div`
     align-items: center;
     display: flex;
     font-size: 13px;
+    font-weight: 500;
+`
+const Taxes2 = styled.div`
+    width: 180px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 13px;
 `
 
 const Taxes = styled.div`
     width: 180px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+`
+const Gross2 = styled.div`
+    width: 120px;
     height: 100%;
     align-items: center;
     display: flex;
@@ -68,6 +118,14 @@ const Gross = styled.div`
     align-items: center;
     display: flex;
     font-size: 13px;
+    font-weight: 500;
+`
+const Name2 = styled.div`
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
 `
 
 const Name = styled.div`
@@ -76,12 +134,22 @@ const Name = styled.div`
     display: flex;
     align-items: center;
     font-size: 13px;
+    font-weight: 500;
 `
 
 const Lists = styled.div`
     width: 95%;
     height: 100%;
     display: flex;
+`
+const Table2 = styled.div`
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #c5c5c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 `
 
 const Table = styled.div`
@@ -91,6 +159,8 @@ const Table = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-color: #F1F7F9;
 `
 
 const Input = styled.input`
