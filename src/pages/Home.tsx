@@ -19,7 +19,7 @@ const Home = () => {
               quasi!
             </p>
           </P>
-          <NavLink to="/dashboard" style={{ textDecoration: "none" }}>
+          <NavLink to="/sign-up" style={{ textDecoration: "none" }}>
             <Buttonhold>
               <Button>Get Started</Button>
             </Buttonhold>

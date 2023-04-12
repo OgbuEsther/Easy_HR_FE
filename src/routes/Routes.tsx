@@ -4,6 +4,10 @@ import { createBrowserRouter } from "react-router-dom";
 import { Dashboard, HomeLayout } from "../components";
 import  ErrorBoundary  from "../utils/hoc/ErrorBoundary";
 import NotFound from "../utils/hoc/NotFound";
+import SignUp from "../pages/SigUp";
+import SignIn from "../pages/SignIn";
+import Otp from "../pages/Otp";
+import SignUpOption from "../pages/SignUpOption";
 
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
@@ -53,6 +57,21 @@ export const Elements = createBrowserRouter([
         errorElement: <ErrorBoundary />,
       },
     ],
+  },{
+    path:"/sign-up",
+    element: <SignUp/>
+  },
+  {
+    path:"/sign-in",
+    element: <SignIn/>
+  },
+  {
+    path:"/verification",
+    element: <Otp/>
+  },
+  {
+    path:"/Sign-up-option",
+    element: <SignUpOption/>
   },
   {
     path : "*",
