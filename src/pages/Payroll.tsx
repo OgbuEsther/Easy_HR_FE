@@ -5,7 +5,9 @@ const Payroll = () => {
   return (
       <Container>
           <Wrapper>
-              
+              <Head>
+                  
+              </Head>
           </Wrapper>
       </Container>
   )
@@ -13,16 +15,23 @@ const Payroll = () => {
 
 export default Payroll
 
-const Wrapper = styled.div`
+const Head = styled.div`
     width: 100%;
-    height: 400px;
+    height: 50px;
+    border-bottom: 1px solid #eee;;
+`
+
+const Wrapper = styled.div`
+    width: 90%;
+    height: 500px;
     display: flex;
-    background-color: green;
+    border: 1px solid #d6dee9;
+    margin-top: 110px;
 `
 
 const Container = styled.div`
     width: calc(100vw - 270px);
     display: flex;
-    flex-direction: column;
     height: 400px;
+    justify-content: center;
 `
