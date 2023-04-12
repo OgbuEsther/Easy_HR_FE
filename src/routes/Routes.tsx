@@ -6,6 +6,10 @@ import  ErrorBoundary  from "../utils/hoc/ErrorBoundary";
 import NotFound from "../utils/hoc/NotFound";
 import HomeScreen from "../pages/landingpage/HomeScreen";
 import Payroll from "../pages/Payroll";
+import SignUp from "../pages/SigUp";
+import SignIn from "../pages/SignIn";
+import Otp from "../pages/Otp";
+import SignUpOption from "../pages/SignUpOption";
 
 const Home = lazy(() => import("../pages/landingpage/Home"));
 const About = lazy(() => import("../pages/landingpage/Connect"));
@@ -61,6 +65,21 @@ export const Elements = createBrowserRouter([
         errorElement: <ErrorBoundary />,
       },
     ],
+  },{
+    path:"/sign-up",
+    element: <SignUp/>
+  },
+  {
+    path:"/sign-in",
+    element: <SignIn/>
+  },
+  {
+    path:"/verification",
+    element: <Otp/>
+  },
+  {
+    path:"/Sign-up-option",
+    element: <SignUpOption/>
   },
   {
     path : "*",
